@@ -1,0 +1,116 @@
+class Lagoa {
+  final int id;
+  final String nome;
+  final String localidade;
+  final String imagemUrl;
+  final String descricao;
+  final int likes;
+
+  const Lagoa({
+    required this.id,
+    required this.nome,
+    required this.localidade,
+    required this.imagemUrl,
+    required this.descricao,
+    required this.likes,
+  });
+}
+
+final List<Lagoa> listaLagoas = [
+  const Lagoa(
+    id: 1,
+    nome: 'Lagoa do Carcará',
+    localidade: 'Nísia Floresta, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE54kdHfnTQM2dE6Cjxkk8wkJU2DUge0ybivskHpkjllqkHIG1ukYRk4WB5Go2ZRU1BW73Pv9nwGGQyOwyXcpvILhxY_d5O3PdFwlP4iGm3KSSnLYVZ2TVVJDwxDHcDu2KT4eFWjHb-ZVWDmAg05tdOYq9aRD0C7zm01daHaGexvNzsrjug9MNi1PwWeq-/w640-h360/LAGOA%20DO%20CARCAR%C3%81,%20N%C3%8DSIA%20FLORESTA,%20RIO%20GRANDE%20DO%20NORTE,%20FOTO%20JOILSON%20GARCIA%202.jpg',
+    descricao: 'A Lagoa do Carcará fica em Nísia Floresta, a cerca de 40 km de Natal, no litoral sul do Rio Grande do Norte. Integra o Roteiro das Águas e é conhecida pela água doce, limpa e transparente, com areia clara nas margens. O nome vem do carcará, ave de rapina comum na região. Dá para chegar pela BR-101 Sul e pela RN-063 (Rota do Sol), em direção a Nísia Floresta.',
+    likes: 41,
+  ),
+  const Lagoa(
+    id: 2,
+    nome: 'Lagoa de Alcaçuz',
+    localidade: 'Nísia Floresta, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhokIbA_F-jRBVxZrjuK7H2cjv3i-YayGoKofzBIBVnsyUXUEpeI7jVx0oekhFszHopmTrw4DF39fk8hjdBv-04B4jgqBHXPMSrPW3GW011qgwUQ3T-uV9Bijid8UDcHyBl86o25HpkqdaHits9Q2J_e76heARJJCuzMF30H3JiofSgqTRPX8btTaK_Nx0D/w480-h640/LAGOA%20DE%20ALCA%C3%87UZ,%20N%C3%8DSIA%20FLORESTA,%20RIO%20GRANDE%20DO%20NORTE,%20FOTO%20JOILSON%20GARCIA.jpg',
+    descricao: 'A Lagoa de Alcaçuz também fica em Nísia Floresta, a 40 km de Natal. Suas águas calmas e mornas são um convite para um banho relaxante. A parte em que a água é mais cristalina fica na margem mais deserta da lagoa, cercada por muita natureza.',
+    likes: 35,
+  ),
+  const Lagoa(
+    id: 3,
+    nome: 'Lagoa da Juventude',
+    localidade: 'Nísia Floresta, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFJLGmSW_1h2nV5-szzQcr0hyphenhyphen0kHNOCb5gjVx3mLsiI3FrWFuscg6sywm-Bu6qg3wrFUr2ccu78-QmqC7tT0GuWskE2Y5Z67G6i_ntGy92N_JzavzyWJ5r9S8ZFnPqVQlVrJzfL5dqPjJ9bVae1o2nKnO_RekSBbLJkYPPPX_r9utQXlNhm8J4auFJs4XY/w480-h640/LAGOA%20DA%20JUVENTUDE,%20N%C3%8DSIA%20FLORESTA,%20RIO%20GRANDE%20DO%20NORTE,%20FOTO%20JOILSON%20GARCIA.jpg',
+    descricao: 'Localizada no litoral Sul, a 40 km de Natal, a Lagoa da Juventude possui águas cristalinas que são um convite para um banho gostoso de água doce, daqueles que recarregam as energias da alma.',
+    likes: 28,
+  ),
+  const Lagoa(
+    id: 4,
+    nome: 'Lagoa das Pedras',
+    localidade: 'Ceará-Mirim, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzjC4wgsv-4dmVYF_tAysKa-xTDMcPQBxWTE1Evizo0zBlUYJZW2-PTnIBgk0G3YzCDB4X3PKk6a_5Omrlg5nY-py_fYeT1JdCJ1tJyYfthKIpz_BwCZDrBRxePWjESzh8cpg3dbslYvVriHo_Cue2aMR8o74KRHLhLqcG3YAQnQ5K_JsxT2jEbfmRTih5/w640-h480/LAGOA%20DAS%20PEDRAS,%20CEAR%C3%81%20MIRIM,%20RIO%20GRANDE%20DO%20NORTE,%20RN%202.jpg',
+    descricao: 'A Lagoa das Pedras fica em Ceará-Mirim, no litoral Norte. Fica dentro de uma propriedade privada, com um visual mais rústico e natural. O acesso é feito preferencialmente por veículos 4x4, garantindo uma aventura até chegar às suas águas.',
+    likes: 19,
+  ),
+  const Lagoa(
+    id: 5,
+    nome: 'Lagoa do Vital',
+    localidade: 'Maxaranguape, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQy8TM1HFxR9yKX9TlJKPAI2iQC1uk4WOVClx3lu4KGFyA3GVjonXrgWYXaPKC7zZrQVC9cIxLerRA-b_nZUjteSOOAkRiCP4ta_tDCV3ge8bYUIK3_oEVVFsReJb1Yvxg37PgEY3w6RBwJlrHGiDeN0KYqcNbkKahKc3dWDOT78XtrlksCfpNB6VbG7O9/w640-h480/LAGOA%20DO%20VITAL,%20MAXARANGUAPE,%20RIO%20GRANDE%20DO%20NORTE,%20RN.jpg',
+    descricao: 'A cerca de 50 minutos de Natal, o lugar possui águas cristalinas e bem quentinhas. Conta com uma boa estrutura de barracas que servem almoço e petiscos, sendo perfeito para passar o dia inteiro relaxando.',
+    likes: 45,
+  ),
+  const Lagoa(
+    id: 6,
+    nome: 'Lagoa da Cotia',
+    localidade: 'Rio do Fogo, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjllW027ZWAidBrnCH3MSpCJaTxPBYXtfQ5IDUJr7tERHFsVl4mBWKaLazjYIw6qJ7YVRAjROUXPQfxmYQ6-eHkWuARNMnF6ZSCJMF1sto2TFZ9VnQrnVtR4vRuCV6B52Y8_603GvRGlBmgnesLiDGfu0Qn_BZbAJOPFPOXMGk3f74sLFtrKqUOgY0IvlmX/s3783/LAGOA%20DA%20COTIA%20RN.jpg',
+    descricao: 'A 65 km de Natal, no município de Rio do Fogo, a Lagoa da Cotia é uma ótima opção de lazer para um dia de paz e tranquilidade com a família. Possui áreas com bares e também margens mais livres e abertas ao público.',
+    likes: 33,
+  ),
+  const Lagoa(
+    id: 7,
+    nome: 'Lagoa de Guaraíras',
+    localidade: 'Tibau do Sul, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi06f6mrHqJQIfZo8IQOykasg85RGpqtIWo71u8dz-0yqJ1UkiO6obtLTZkHynn-WcmoKZvza29EFEpkMJVakRD82SYObcD5tAhmxIVzXYk1GEOrwE5tLaJuyiUKGw5VFaf64iOKA4ertLEEt9NWVjMVkHhEWHS5qEBNMgkVo3XYlYKxytUEp2A-NEB9oZJ/s3609/LAGOA%20DE%20GUARA%C3%8DRAS%20TIBAU%20DO%20SUL%20PIPA%20RN.jpeg',
+    descricao: 'Famosa pelo seu pôr do sol inesquecível, a Lagoa de Guaraíras é um grande corpo d\'água que se encontra com o mar. É excelente para passeios de lancha, caiaque e para a degustação de ostras frescas cultivadas na própria lagoa.',
+    likes: 89,
+  ),
+  const Lagoa(
+    id: 8,
+    nome: 'Lagoa da Coca-Cola',
+    localidade: 'Baía Formosa, Rio Grande do Norte',
+    imagemUrl: 'https://media-cdn.tripadvisor.com/media/photo-s/14/10/b2/2d/a-lagoa-da-coca-cola.jpg',
+    descricao: 'Situada na Reserva Mata da Estrela, a lagoa ganha esse apelido carinhoso devido à cor escura de suas águas, rica em ferro e iodo. A lenda local diz que a água tem propriedades rejuvenescedoras.',
+    likes: 56,
+  ),
+  const Lagoa(
+    id: 9,
+    nome: 'Lagoa de Arituba',
+    localidade: 'Nísia Floresta, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1zhULMV7LRtnMTEMPKXWLWqfiOgEcyUv4YreNppCMPkOfxhOQAB67d6hHn7sWLSbYMOm1HFRn7mu7pnkTRsHzDfQrAXbf2egJzglO93gypEJKgCOIwN5mNnlnBJ70ry27BtwQSxBC3uZpRuSoHLMSioxsHP4uVDMdfq70R7hHsYWMuWMBarKeg14_M_jw/s3092/LAGOA%20DE%20ARITUBA%20RN.jpg',
+    descricao: 'Uma das lagoas mais famosas e estruturadas do Litoral Sul. Arituba oferece águas tranquilas, passeios de caiaque, pedalinho e tirolesa (aerobunda), além de diversos restaurantes ao redor.',
+    likes: 72,
+  ),
+  const Lagoa(
+    id: 10,
+    nome: 'Lagoa Amarela',
+    localidade: 'Nísia Floresta, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiP6J0v6c0CpKTLNC5GDH8z9nb_2nzMUPcfJ4TFqoiQ1MIyz-J2YFe50Q1tCfy4wkQuC6paUNLBhs9bhf8ShKKsez-VcBEUJ-EwubyUV4L7mGFCOaIsa-u2TJfqIH4_MUUAgJ6bOetvPxSGoTYEZEo4Dnj6KF9r3h1-xPeG_JyMHcmO-DQkZL-xvXkSyvvB/s3756/LAGOA%20AMARELA%20N%C3%8DSIA%20FLORESTA%20RN.jpg',
+    descricao: 'Menos explorada comercialmente, a Lagoa Amarela é um refúgio para quem busca paz e contato direto com a natureza intocada, possuindo um cenário belíssimo e relaxante.',
+    likes: 24,
+  ),
+  const Lagoa(
+    id: 11,
+    nome: 'Lagoa de Pitangui',
+    localidade: 'Extremoz, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFbquq9_yJDN8yQZzug4Pxe4v9C3a1AQ_tUlPTpyJ1y4HPyNzYeokqUbkaO1jUyZihjtZHwaiZ4PsKWYbphjVofnHZcHpMr1dqVfrGCUOUDyV6WQAFo6cAHu-2D_xAM1rxyEkAm_9bjy9Wm-UUj6sqwVn7ly-X-PFkQ75gRHh65LFkE11nDvfjvHDWB3HC/s1606/LAGOA%20DE%20PITANGUI%20EXTREMOZ%20RN.jpg',
+    descricao: 'Parada quase obrigatória dos passeios de buggy no litoral norte, a Lagoa de Pitangui é como um oásis no meio das dunas. Com bares de palha dentro d\'água, é ideal para se refrescar, comer espetinhos e descansar.',
+    likes: 95,
+  ),
+  const Lagoa(
+    id: 12,
+    nome: 'Lagoa de Jacumã',
+    localidade: 'Ceará-Mirim, Rio Grande do Norte',
+    imagemUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOiUAuz3L16DHDis65Ocluej9W5V3YkiogImklA_eoyRJY7SU-0jiok7xFh6KabKgMrMplYvPOpr4swN_hYyd5WUXN_0ROTmZd3FQ2jmb1BHR-scKGkRjTxy_3V5c1dEcpqyWgh6i1b5oapjDtja0268m71EKwYIHQE6x_9dIFH8ESWKEv92rGc3VjVCqb/s1566/TIROLESA%20LAGOA%20DE%20JACUM%C3%83%20CEAR%C3%81%20MIRIM%20RN.jpg',
+    descricao: 'Famosa pelas brincadeiras nas dunas que a cercam, como o "esquibunda" e o "aerobunda". As águas da Lagoa de Jacumã são profundas e refrescantes, completando a diversão após a descida radical.',
+    likes: 110,
+  ),
+];
